@@ -1,0 +1,37 @@
+[package]
+name = "acitx-test"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+anyhow = "1.0"
+thiserror = "1.0"
+actix-web = "4.0.1"
+quick-xml = "0.22.0"
+actix-files = "0.6.0"
+actix-multipart = "0.4.0"
+futures-util = "0.3.21"
+futures = "0.3.21"
+async-trait = "0.1.53"
+
+#orm
+rbatis = { version = "3.1", features = ["runtime-tokio-rustls", "mysql", "postgres", "debug_mode"] }
+rbson = { version = "*" }
+lazy_static = "1.4.0"
+
+
+#serde and base types
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+chrono = { version = "0.4", features = ["serde"] }
+uuid = "0.8"
+once_cell = "1.9.0"
+bigdecimal = { version = "0.2.0", features = ["serde"] }
+#log lib
+log = "0.4"
+fast_log = "1.5"
+#async runtime lib
+tokio = { version = "1.16.1", features = ["full"] }
+async-std = { version = "1.9", features = ["attributes", "tokio1"] }
