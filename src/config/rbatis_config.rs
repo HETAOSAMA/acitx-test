@@ -9,9 +9,6 @@ use std::time::Duration;
 
 use lazy_static::lazy_static;
 use rbatis::rbatis::Rbatis;
-//
-
-
 
 lazy_static! {
         pub static ref rb : Rbatis = Rbatis::new();

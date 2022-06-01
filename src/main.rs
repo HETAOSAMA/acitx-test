@@ -6,6 +6,7 @@ use crate::config::rbatis_config::{InitDb,rb};
 
 mod user;
 mod config;
+mod result;
 
 
 #[actix_web::main]
